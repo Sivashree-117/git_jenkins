@@ -16,6 +16,11 @@ pipeline {
                 echo 'Deploying application'
             }
         }
+        stage('Build') {
+    steps {
+        sh 'mvn clean package'
+    }
+}
     }
 }
 echo 'Build process completed successfully'
