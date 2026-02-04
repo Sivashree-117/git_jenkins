@@ -18,3 +18,5 @@ pipeline {
         }
     }
 }
+echo 'Build process completed successfully'
+
